@@ -1,0 +1,159 @@
+
+table {
+        width: 100%;
+        border-collapse: collapse; /* This makes the borders single lines */
+    }
+th, td {
+        border: 1px solid black; /* This adds the actual border line */
+        padding: 8px;            /* This adds space inside the cells */
+        text-align: left;
+    }
+th {
+        background-color: #f2f2f2; /* Optional: makes the header stand out */
+    }
+
+        /* Base Styles */
+body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f7f6;
+            color: #2c3e50;
+        }
+
+        /* Navigation Bar */
+nav {
+            background-color: #8B4513; /* Brownie/Senior Branch feel */
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+.nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Hero Section */
+.hero {
+            background: linear-gradient(135deg, #8B4513 0%, #d4a017 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+.hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Main Content */
+.container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+.bio-section {
+            border-bottom: 2px solid #eee;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+h3 {
+            color: #8B4513;
+            border-left: 5px solid #d4a017;
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+
+        /* Challenge List Styling */
+.challenge-list {
+            list-style: none;
+            padding: 0;
+        }
+
+.challenge-item {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            margin-bottom: 12px;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+.challenge-item:hover {
+            transform: translateX(10px);
+            border-color: #d4a017;
+        }
+
+.points-badge {
+            background: #d4a017;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-right: 15px;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        /* Footer */
+footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+.challenge-item {
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+/* Fades the text and adds a strike-through when checked */
+.challenge-item.completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.points-badge {
+    min-width: 80px;
+    text-align: center;
+}
+
+
+        .challenge-item { margin: 10px 0; padding: 10px; border: 1px solid #ddd; display: flex; align-items: center; }
+        .completed { background-color: #d4edda; text-decoration: line-through; color: #155724; }
+        .points-badge { font-weight: bold; margin: 0 10px; color: #555; }
+        #progress-bar { width: 100%; background: #eee; height: 20px; border-radius: 10px; margin-top: 20px; }
+        #progress-fill { height: 100%; background: #4CAF50; width: 0%; border-radius: 10px; transition: 0.3s; }
